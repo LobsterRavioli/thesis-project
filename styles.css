@@ -1,35 +1,65 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'San Francisco', Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: #fafafa;
     color: #333;
 }
 
-header {
-    background: #007bff;
-    color: #fff;
-    padding: 20px;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
+nav ul li {
+    display: inline;
 }
 
-header p {
-    margin-top: 10px;
+nav ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+.hero {
+    background: url('your-hero-image-url.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+header h1, main h2 {
+    font-weight: normal;
+}
+
+header p, main p {
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
 }
 
 section {
-    padding: 20px;
+    margin-bottom: 40px;
 }
 
 .repository {
     background: #fff;
     margin-bottom: 20px;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -38,6 +68,15 @@ section {
 }
 
 .repository a {
-    color: #007bff;
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
     text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.repository a:hover {
+    background: #0056b3;
 }
